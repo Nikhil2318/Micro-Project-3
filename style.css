@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.input-text{
+    height: 60px;
+    width: 360px;
+    background: #181F32;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 10px 22px;
+    border: none;
+    text-align: right;
+}
+
+.input-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -55px;
+    /* border: 10px solid green; */
+}
+
+ .num-btns{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    height: 300px;
+    width: 360px;
+    background: #252D44;
+    border-radius: 6px;
+    column-gap: 18px;
+}
+
+.main-btn{
+    width: 60px;
+    height: 40px;
+    /* background-color: #EAE3DB; */
+    background-color: hsl(43.2, 5.88%, 88.82%);
+    border: none;
+    border-radius: 6px;
+    font-family: Inter;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #3B4664;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.del{
+    background-color: #647299;
+    color: #FFFFFF;
+}
+
+.reset {
+    grid-column: span 2;
+    width: 150px;
+    color: #FFFFFF;
+    background-color: #647299;
+    /* background-color: hsl(220, 18.18%, 41.18%); */
+
+}
+
+.equal {
+    grid-column: span 2; 
+    width: 150px;
+    color: #FFFFFF;
+    background-color: #D13F30;
+}
+
+.main-btn:hover{
+    background-color: hsl(43.2, 5.88%, 75%);
+}
+.main-btn:active{
+    background-color: hsl(43.2, 5.88%, 85%);
+}
+
+
+
+.reset:hover{
+    background-color: hsl(220, 18.18%, 35%);
+}
+.reset:active{
+    background-color: hsl(220, 18.18%, 45%);
+}
+
+
+.del:hover{
+    background-color: hsl(220, 18.18%, 35%);
+}
+.del:active{
+    background-color: hsl(220, 18.18%, 45%);
+}
+
+
+.equal:hover{
+    background-color: hsl(7.5, 68.63%, 40%);
+
+}
+.equal:active{
+    background-color: hsl(7.5, 68.63%, 50%);
+
+}
